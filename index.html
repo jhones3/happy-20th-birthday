@@ -11,7 +11,7 @@
 margin:0;
 padding:0;
 box-sizing:border-box;
-font-family: 'Poppins', sans-serif;
+font-family:'Poppins', sans-serif;
 }
 
 body{
@@ -19,7 +19,7 @@ height:100vh;
 display:flex;
 align-items:center;
 justify-content:center;
-background:linear-gradient(135deg,#ff758c,#ff7eb3,#ffd1dc);
+background:linear-gradient(135deg,#87CEEB,#a7dfff,#d6f1ff);
 overflow:hidden;
 }
 
@@ -32,14 +32,14 @@ border-radius:25px;
 text-align:center;
 max-width:360px;
 width:90%;
-box-shadow:0 15px 35px rgba(0,0,0,0.2);
+box-shadow:0 15px 35px rgba(0,0,0,0.15);
 position:relative;
 z-index:10;
 }
 
 h1{
 font-size:28px;
-color:#ff2e7a;
+color:#2196f3;
 margin-bottom:10px;
 }
 
@@ -57,14 +57,14 @@ margin-bottom:10px;
 }
 
 .name{
-color:#ff2e7a;
+color:#2196f3;
 font-weight:bold;
 }
 
 .footer{
 margin-top:15px;
 font-weight:bold;
-color:#ff2e7a;
+color:#2196f3;
 }
 
 /* Floating hearts */
@@ -73,24 +73,28 @@ color:#ff2e7a;
 position:absolute;
 font-size:18px;
 animation:float 7s linear infinite;
-opacity:0.7;
+opacity:0.8;
 }
 
 @keyframes float{
+
 0%{
 transform:translateY(100vh);
 opacity:0;
 }
+
 20%{
 opacity:1;
 }
+
 100%{
 transform:translateY(-10vh);
 opacity:0;
 }
+
 }
 
-/* Mobile tweaks */
+/* Mobile */
 
 @media (max-width:420px){
 
@@ -119,23 +123,23 @@ font-size:15px;
 <h2>My Beautiful Girlfriend</h2>
 
 <p>
-Happy birthday to the most amazing girl in my life, <span class="name">My Love</span>.
+Happy birthday to the most amazing girl in my life, <span class="name">Baby</span>.
 </p>
 
 <p>
-Turning 20 is a special moment, and I’m so lucky to be here celebrating it with you.
+I appreciate your presence po. Lagi kitang gustong kasama, at sobrang saya ko kapag magkasama tayo.
 </p>
 
 <p>
-You make my world brighter, my heart happier, and my life more meaningful every single day.
+I wish na marami pang birthdays ang darating na magkasama tayo. 💙
 </p>
 
 <p>
-I hope this year brings you endless happiness, success, and all the dreams your heart desires.
+You make my world brighter and my heart happier every day.
 </p>
 
 <p class="footer">
-I love you so much ❤️
+Forever yours 💙
 </p>
 
 </div>
@@ -146,7 +150,7 @@ for(let i=0;i<30;i++){
 
 let heart=document.createElement("div");
 heart.className="heart";
-heart.innerHTML="💖";
+heart.innerHTML="💙";
 
 heart.style.left=Math.random()*100+"vw";
 heart.style.fontSize=(14+Math.random()*26)+"px";
